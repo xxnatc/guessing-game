@@ -9,3 +9,4 @@ console.log('Question 3 response: ' + question3);
 alert('You answered question 1 with: "' + question1 + '".');
 alert('You answered question 2 with: "' + question2 + '".');
 alert('You answered question 3 with: "' + question3 + '".');
+// comment
