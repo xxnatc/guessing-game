@@ -23,6 +23,6 @@ if (question3.toLowerCase() === 'yes' || question3.toLowerCase() === 'y') {
   score++;
 } else {
   alert('You got it wrong, ' + name + '! COFFEE FOR LIFE!!!!');
-} 
+}
 
 alert('You got ' + score + ' out of 3 correct, ' + name + '. Thanks for playing!');
