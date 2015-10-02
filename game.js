@@ -5,9 +5,12 @@ var three = document.getElementById('three');
 var name = prompt('Welcome! What\'s your name?');
 var score = 0;
 
+var questions = ['Am I a dog person?', 'Have I ever lived in New York City?', 'Do I prefer coffee over tea?'];
+var answers = ['yes', 'y', 'no', 'n'];
+
 function ques1() {
-  var question1 = prompt('Am I a dog person?');
-  if (question1.toLowerCase() === 'no' || question1.toLowerCase() === 'n') {
+  var question1 = prompt(questions[0]);
+  if (question1.toLowerCase() === answers[2] || question1.toLowerCase() === answers[3]) {
     one.innerHTML = 'You\'re off to a great start, ' + name + '! I am very much a cat person.';
     score++;
   } else {
@@ -16,8 +19,8 @@ function ques1() {
 }
 
 function ques2() {
-  var question2 = prompt('Have I ever lived in New York City?');
-  if (question2.toLowerCase() === 'no' || question2.toLowerCase() === 'n') {
+  var question2 = prompt(questions[1]);
+  if (question2.toLowerCase() === answers[2] || question2.toLowerCase() === answers[3]) {
     two.innerHTML = 'You are correct! I have lived in Hong Kong, London, Seattle, but not New York City.';
     score++;
   } else {
@@ -26,8 +29,8 @@ function ques2() {
 }
 
 function ques3() {
-  var question3 = prompt('Do I prefer coffee over tea?');
-  if (question3.toLowerCase() === 'yes' || question3.toLowerCase() === 'y') {
+  var question3 = prompt(questions[2]);
+  if (question3.toLowerCase() === answers[0] || question3.toLowerCase() === answers[1]) {
     three.innerHTML = 'Well done, ' + name + '! Coffee flows in my blood.';
     score++;
   } else {
