@@ -1,0 +1,13 @@
+body {
+	background-color: #FFF69F;
+}
+.correct {
+	color: green;
+}
+.incorrect {
+	color: red;
+}
+h4 {
+	font-family: Arial;
+	color: #00043E;
+}
